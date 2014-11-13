@@ -552,12 +552,21 @@
   #define LARGE_FLASH true
 
   #if MOTHERBOARD == 77
+    // aad change X axis to E4
+    /*
+    OLD VALUES
     #define X_STEP_PIN         54
     #define X_DIR_PIN          55
     #define X_ENABLE_PIN       38
     #define X_MIN_PIN           3
     #define X_MAX_PIN           -1   //2 //Max endstops default to disabled "-1", set to commented value to enable.
-
+    */
+    #define X_STEP_PIN         43
+    #define X_DIR_PIN          37
+    #define X_ENABLE_PIN       42
+    #define X_MIN_PIN           3
+    #define X_MAX_PIN           -1
+    
     #define Y_STEP_PIN         60
     #define Y_DIR_PIN          61
     #define Y_ENABLE_PIN       56
@@ -594,6 +603,21 @@
 
   #else
 
+    // aad use E4 for X axis
+    /*
+    OLD VALUES
+    #define X_STEP_PIN         54
+    #define X_DIR_PIN          55
+    #define X_ENABLE_PIN       38
+    #define X_MIN_PIN           3
+    #define X_MAX_PIN           2
+    */
+    #define X_STEP_PIN         43
+    #define X_DIR_PIN          37
+    #define X_ENABLE_PIN       42
+    #define X_MIN_PIN           3
+    #define X_MAX_PIN           2
+
     #define X_STEP_PIN         54
     #define X_DIR_PIN          55
     #define X_ENABLE_PIN       38
@@ -611,14 +635,14 @@
     #define Z_ENABLE_PIN       62
     #define Z_MIN_PIN          18
     #define Z_MAX_PIN          19
-
+    
     #define Y2_STEP_PIN        36
     #define Y2_DIR_PIN         34
     #define Y2_ENABLE_PIN      30
-
+    
     #define Z2_STEP_PIN        36
     #define Z2_DIR_PIN         34
-    #define Z2_ENABLE_PIN      30
+    #define Z2_ENABLE_PIN      30    
 
     #define E0_STEP_PIN        26
     #define E0_DIR_PIN         28
